@@ -33,6 +33,8 @@
       <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
         <a href="#about">عن الحملة</a>
         <a href="#values">رسالتنا</a>
+        <a href="#gallery">معرض الصور</a>
+        <a href="#videos">الفيديوهات</a>
         <a href="#privacy">الخصوصية</a>
         <a class="nav-cta" href="#register">سجل الآن <span aria-hidden="true">←</span></a>
       </nav>
@@ -124,6 +126,106 @@
         <span class="quote-sub">ابدأ من مكانك، وبالخطوة التي تناسبك.</span>
       </div>
     </section>
+
+    <section class="gallery-section section-pad" id="gallery" aria-labelledby="galleryTitle">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow eyebrow-dark">لحظات من الأمل</span>
+          <h2 id="galleryTitle">كل بداية تحمل <em>صورة جديدة</em></h2>
+          <p>مشاهد هادئة من الطبيعة تذكّرنا بأن التغيير ممكن، وأن لكل يوم فرصة جديدة.</p>
+        </div>
+
+        <div class="gallery-widget" aria-roledescription="معرض صور متحرك" aria-label="معرض صور عن الأمل والطبيعة">
+          <div class="gallery-stage" id="galleryStage">
+            <figure class="gallery-slide is-active" data-gallery-slide aria-hidden="false">
+              <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="شروق الشمس فوق حقل طبيعي هادئ" width="1600" height="1000" loading="lazy" fetchpriority="low" draggable="false">
+              <figcaption class="gallery-caption"><span>01 / 04</span><h3>كل صباح فرصة جديدة</h3><p>خطوة صغيرة اليوم قد تصنع فرقًا كبيرًا غدًا.</p></figcaption>
+            </figure>
+            <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="مشهد طبيعي واسع تحيط به الجبال والخضرة" width="1600" height="1000" loading="lazy" draggable="false">
+              <figcaption class="gallery-caption"><span>02 / 04</span><h3>الطريق يبدأ بخطوة</h3><p>ليس مطلوبًا أن ترى الطريق كله، يكفي أن تبدأ.</p></figcaption>
+            </figure>
+            <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="بحيرة هادئة تعكس الجبال والسماء" width="1600" height="1000" loading="lazy" draggable="false">
+              <figcaption class="gallery-caption"><span>03 / 04</span><h3>مساحة للهدوء والتأمل</h3><p>امنح نفسك وقتًا، فالتغيير رحلة وليس سباقًا.</p></figcaption>
+            </figure>
+            <figure class="gallery-slide" data-gallery-slide aria-hidden="true">
+              <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=1600&amp;q=85" alt="طبيعة خضراء واسعة تحت ضوء النهار" width="1600" height="1000" loading="lazy" draggable="false">
+              <figcaption class="gallery-caption"><span>04 / 04</span><h3>معًا نحو غد أفضل</h3><p>الدعم والمشاركة يصنعان مساحة أوسع للأمل.</p></figcaption>
+            </figure>
+
+            <button class="gallery-arrow gallery-prev" type="button" data-gallery-prev aria-label="الصورة السابقة">&#10094;</button>
+            <button class="gallery-arrow gallery-next" type="button" data-gallery-next aria-label="الصورة التالية">&#10095;</button>
+          </div>
+
+          <div class="gallery-toolbar">
+            <div class="gallery-dots" role="group" aria-label="اختيار صورة">
+              <button type="button" class="gallery-dot is-active" data-gallery-dot="0" aria-label="عرض الصورة الأولى" aria-current="true"></button>
+              <button type="button" class="gallery-dot" data-gallery-dot="1" aria-label="عرض الصورة الثانية" aria-current="false"></button>
+              <button type="button" class="gallery-dot" data-gallery-dot="2" aria-label="عرض الصورة الثالثة" aria-current="false"></button>
+              <button type="button" class="gallery-dot" data-gallery-dot="3" aria-label="عرض الصورة الرابعة" aria-current="false"></button>
+            </div>
+            <button class="gallery-toggle" type="button" data-gallery-toggle aria-pressed="false">إيقاف العرض التلقائي</button>
+          </div>
+          <p class="gallery-note">الصور تعبيرية عن الأمل والطبيعة، ويمكن استبدالها بصور أنشطة الحملة بعد الحصول على موافقات النشر.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="videos-section section-pad" id="videos" aria-labelledby="videosTitle">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow eyebrow-dark">شاهد وتعرّف</span>
+          <h2 id="videosTitle">رسائل توعوية <em>تستحق المشاهدة</em></h2>
+          <p>محتوى مرئي يفتح باب المعرفة ويشجع على طلب الدعم بعيدًا عن الأحكام والوصمة.</p>
+        </div>
+
+        <div class="videos-grid">
+          <article class="video-card">
+            <button class="video-cover" type="button" data-video-id="a-dwIcCZCDI" data-video-title="مرحلة جديدة من حملة أنت أقوى من المخدرات" aria-label="تشغيل فيديو مرحلة جديدة من حملة أنت أقوى من المخدرات">
+              <img src="https://i.ytimg.com/vi/a-dwIcCZCDI/hqdefault.jpg" alt="صورة معاينة الفيديو الأول" width="480" height="360" loading="lazy">
+              <span class="video-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.8c0-.8.9-1.3 1.6-.9l9 6.2a1.1 1.1 0 0 1 0 1.8l-9 6.2c-.7.5-1.6 0-1.6-.9V5.8Z" fill="currentColor"/></svg></span>
+              <span class="video-duration-label">شاهد الفيديو</span>
+            </button>
+            <div class="video-card-body">
+              <span class="video-category">حملة توعوية</span>
+              <h3>مرحلة جديدة من حملة «أنت أقوى من المخدرات»</h3>
+              <p>تغطية إعلامية لحملة توعوية تدعم الرسائل الإيجابية وتغيير الصورة النمطية.</p>
+              <span class="video-source">المصدر: TeN TV</span>
+            </div>
+          </article>
+
+          <article class="video-card">
+            <button class="video-cover" type="button" data-video-id="Qq-l3zfguj8" data-video-title="رسالة أنت أقوى من المخدرات" aria-label="تشغيل فيديو رسالة أنت أقوى من المخدرات">
+              <img src="https://i.ytimg.com/vi/Qq-l3zfguj8/hqdefault.jpg" alt="صورة معاينة الفيديو الثاني" width="480" height="360" loading="lazy">
+              <span class="video-play-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.8c0-.8.9-1.3 1.6-.9l9 6.2a1.1 1.1 0 0 1 0 1.8l-9 6.2c-.7.5-1.6 0-1.6-.9V5.8Z" fill="currentColor"/></svg></span>
+              <span class="video-duration-label">شاهد الفيديو</span>
+            </button>
+            <div class="video-card-body">
+              <span class="video-category">رسالة توعوية</span>
+              <h3>رسالة «أنت أقوى من المخدرات»</h3>
+              <p>مادة مرئية ضمن رسائل التوعية المجتمعية حول الوقاية وطلب المساعدة.</p>
+              <span class="video-source">المصدر: MediaHub</span>
+            </div>
+          </article>
+        </div>
+        <p class="videos-note">الفيديوهات مستضافة على YouTube. اضغط على الصورة لبدء التشغيل؛ ويمكن استبدالها بفيديوهات الحملة الخاصة عند توفرها.</p>
+      </div>
+    </section>
+
+    <dialog class="video-dialog" id="videoDialog" aria-labelledby="videoDialogTitle">
+      <div class="video-dialog-header">
+        <h3 id="videoDialogTitle">مشاهدة الفيديو</h3>
+        <button type="button" class="video-dialog-close" data-video-close aria-label="إغلاق الفيديو">×</button>
+      </div>
+      <div class="video-frame-wrap">
+        <iframe id="videoFrame" title="مشغل الفيديو" src="about:blank" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="video-dialog-footer">
+        <span>قد تتطلب المشاهدة الاتصال بموقع YouTube.</span>
+        <a id="watchOnYoutube" href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">فتح الفيديو على YouTube</a>
+      </div>
+    </dialog>
 
     <section class="register-section section-pad" id="register">
       <div class="container register-layout">
@@ -250,7 +352,7 @@
           </details>
           <details>
             <summary>هل نشارك البيانات مع جهات أخرى؟</summary>
-            <p>لا نبيع البيانات ولا نشاركها مع أطراف أخرى، إلا بموافقتك أو عند وجود التزام أو أساس قانوني يقتضي ذلك. تمر عملية الإرسال عبر خدمة EmailJS ثم مزود البريد Gmail، وتخضع معالجة البيانات لدى هاتين الخدمتين لسياساتهما وشروطهما. كما تُحمّل الصفحة صورة الخلفية من Unsplash، وتستخدم Google reCAPTCHA v2 لمكافحة الإرسال الآلي؛ وقد تتلقى هذه الخدمات بيانات تقنية مثل عنوان IP ومعلومات المتصفح عند تحميل مواردها أو استخدامها.</p>
+            <p>لا نبيع البيانات ولا نشاركها مع أطراف أخرى، إلا بموافقتك أو عند وجود التزام أو أساس قانوني يقتضي ذلك. تمر عملية الإرسال عبر خدمة EmailJS ثم مزود البريد Gmail، وتخضع معالجة البيانات لدى هاتين الخدمتين لسياساتهما وشروطهما. كما تُحمّل الصفحة صورة الخلفية وصور المعرض من Unsplash، وصور معاينة الفيديوهات من YouTube، وعند اختيار تشغيل فيديو يتم تحميل مشغل YouTube. وتستخدم الصفحة Google reCAPTCHA v2 لمكافحة الإرسال الآلي؛ وقد تتلقى هذه الخدمات بيانات تقنية مثل عنوان IP ومعلومات المتصفح عند تحميل مواردها أو استخدامها.</p>
           </details>
           <details>
             <summary>أين تُحفظ البيانات وكم مدة الاحتفاظ بها؟</summary>
