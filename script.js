@@ -305,6 +305,135 @@ const CONFIG = Object.freeze({
   const year = document.getElementById("currentYear");
   if (year) year.textContent = String(new Date().getFullYear());
 
+
+
+  // Accessible image carousel: autoplay pauses on interaction and respects reduced motion.
+  function initGallery() {
+    const stage = document.getElementById("galleryStage");
+    if (!stage) return;
+
+    const slides = Array.from(stage.querySelectorAll("[data-gallery-slide]"));
+    const dots = Array.from(document.querySelectorAll("[data-gallery-dot]"));
+    const previousButton = stage.querySelector("[data-gallery-prev]");
+    const nextButton = stage.querySelector("[data-gallery-next]");
+    const toggleButton = document.querySelector("[data-gallery-toggle]");
+    const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!slides.length) return;
+
+    let activeIndex = 0;
+    let timer = null;
+    let paused = reducedMotion;
+    let pointerStartX = null;
+
+    function showSlide(index) {
+      activeIndex = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        const active = slideIndex === activeIndex;
+        slide.classList.toggle("is-active", active);
+        slide.setAttribute("aria-hidden", String(!active));
+      });
+      dots.forEach((dot, dotIndex) => {
+        const active = dotIndex === activeIndex;
+        dot.classList.toggle("is-active", active);
+        dot.setAttribute("aria-current", String(active));
+      });
+    }
+
+    function stopAutoplay() {
+      if (timer !== null) window.clearInterval(timer);
+      timer = null;
+    }
+
+    function startAutoplay() {
+      stopAutoplay();
+      if (paused || reducedMotion || slides.length < 2) return;
+      timer = window.setInterval(() => showSlide(activeIndex + 1), 5500);
+    }
+
+    function setPaused(value) {
+      paused = value;
+      if (toggleButton) {
+        toggleButton.textContent = paused ? "تشغيل العرض التلقائي" : "إيقاف العرض التلقائي";
+        toggleButton.setAttribute("aria-pressed", String(paused));
+      }
+      if (paused) stopAutoplay();
+      else startAutoplay();
+    }
+
+    previousButton?.addEventListener("click", () => { showSlide(activeIndex - 1); startAutoplay(); });
+    nextButton?.addEventListener("click", () => { showSlide(activeIndex + 1); startAutoplay(); });
+    dots.forEach((dot) => {
+      dot.addEventListener("click", () => {
+        const requestedIndex = Number(dot.dataset.galleryDot);
+        if (Number.isInteger(requestedIndex)) showSlide(requestedIndex);
+        startAutoplay();
+      });
+    });
+    toggleButton?.addEventListener("click", () => setPaused(!paused));
+
+    stage.addEventListener("pointerdown", (event) => {
+      pointerStartX = event.clientX;
+    }, { passive: true });
+    stage.addEventListener("pointerup", (event) => {
+      if (pointerStartX === null) return;
+      const distance = event.clientX - pointerStartX;
+      pointerStartX = null;
+      if (Math.abs(distance) < 45) return;
+      // In RTL, a left swipe advances to the next slide.
+      showSlide(activeIndex + (distance < 0 ? 1 : -1));
+      startAutoplay();
+    }, { passive: true });
+    stage.addEventListener("pointercancel", () => { pointerStartX = null; });
+    stage.addEventListener("mouseenter", stopAutoplay);
+    stage.addEventListener("mouseleave", startAutoplay);
+    stage.addEventListener("focusin", stopAutoplay);
+    stage.addEventListener("focusout", startAutoplay);
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stopAutoplay();
+      else startAutoplay();
+    });
+
+    setPaused(reducedMotion);
+  }
+
+  // YouTube players are created only after a visitor presses a play button.
+  function initVideoGallery() {
+    const dialog = document.getElementById("videoDialog");
+    const frame = document.getElementById("videoFrame");
+    const title = document.getElementById("videoDialogTitle");
+    const watchLink = document.getElementById("watchOnYoutube");
+    if (!dialog || !frame || !title || !watchLink) return;
+
+    function stopVideo() {
+      frame.src = "about:blank";
+    }
+
+    document.querySelectorAll("[data-video-id]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const videoId = button.dataset.videoId;
+        if (!/^[A-Za-z0-9_-]{11}$/.test(videoId || "")) return;
+
+        const videoTitle = button.dataset.videoTitle || "مشاهدة الفيديو";
+        const youtubeUrl = `https://www.youtube.com/watch?v=${videoId}`;
+        title.textContent = videoTitle;
+        watchLink.href = youtubeUrl;
+        frame.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+
+        if (typeof dialog.showModal === "function") dialog.showModal();
+        else window.open(youtubeUrl, "_blank", "noopener,noreferrer");
+      });
+    });
+
+    dialog.querySelector("[data-video-close]")?.addEventListener("click", () => dialog.close());
+    dialog.addEventListener("close", stopVideo);
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) dialog.close();
+    });
+  }
+
+
+  initGallery();
+  initVideoGallery();
   initEmailJs();
   loadRecaptcha();
 })();
