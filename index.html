@@ -209,7 +209,7 @@
             </div>
           </article>
         </div>
-        <p class="videos-note">الفيديوهات مستضافة على YouTube. اضغط على الصورة لبدء التشغيل؛ ويمكن استبدالها بفيديوهات الحملة الخاصة عند توفرها.</p>
+        <p class="videos-note"></p>
       </div>
     </section>
 
@@ -237,7 +237,7 @@
             <span class="promise-icon" aria-hidden="true">✓</span>
             <div><strong>بياناتك ليست للعرض العام</strong><small>لا تظهر بيانات التسجيل على الموقع أو للمشاركين الآخرين.</small></div>
           </div>
-          <div class="contact-mini"><span aria-hidden="true">✉</span><a href="mailto:email@gmail.com">email@gmail.com</a></div>
+          <div class="contact-mini"><span aria-hidden="true">✉</span><a href="mailto:email"></a></div>
         </div>
 
         <div class="form-card">
@@ -246,8 +246,7 @@
             <span class="required-note"><b>*</b> حقول إلزامية</span>
           </div>
 
-          <div class="setup-notice" id="setupNotice" role="status" hidden>
-            تم إعداد الواجهة. لتفعيل الإرسال، أضف بيانات EmailJS ومفتاح reCAPTCHA v2 في <code>script.js</code> وفق خطوات README.md.
+          <div class="setup-notice" id="setupNotice" role="status" hidden><code>script.js</code>
           </div>
 
           <form id="registrationForm" novalidate>
@@ -266,8 +265,8 @@
 
               <div class="field">
                 <label for="age">السن <b>*</b></label>
-                <input id="age" name="age" type="number" inputmode="numeric" min="18" max="100" step="1" placeholder="مثال: 25" required>
-                <small class="field-hint">التسجيل متاح لمن يبلغ 18 عامًا فأكثر.</small>
+                <input id="age" name="age" type="number" inputmode="numeric" min="14" max="100" step="1" placeholder="مثال: 14" required>
+                <small class="field-hint">التسجيل متاح لمن يبلغ 14 عامًا فأكثر.</small>
               </div>
 
               <div class="field">
@@ -276,7 +275,6 @@
                   <option value="" selected disabled>اختر النوع</option>
                   <option value="ذكر">ذكر</option>
                   <option value="أنثى">أنثى</option>
-                  <option value="أفضل عدم الإجابة">أفضل عدم الإجابة</option>
                 </select>
               </div>
 
@@ -288,7 +286,6 @@
                   <option value="متزوج / متزوجة">متزوج / متزوجة</option>
                   <option value="مطلق / مطلقة">مطلق / مطلقة</option>
                   <option value="أرمل / أرملة">أرمل / أرملة</option>
-                  <option value="أفضل عدم الإجابة">أفضل عدم الإجابة</option>
                 </select>
               </div>
 
@@ -298,8 +295,8 @@
               </div>
 
               <div class="field field-full">
-                <label for="job">الوظيفة <b>*</b></label>
-                <input id="job" name="job" type="text" autocomplete="organization-title" placeholder="اكتب الوظيفة أو مجال العمل" maxlength="100" required>
+                <label for="job">عرف حالتك<b>*</b></label>
+                <input id="job" name="job" type="text" autocomplete="organization-title" placeholder="ااكتب رسالتك بشكل آمن" maxlength="36000" required>
               </div>
             </div>
 
@@ -348,7 +345,7 @@
           </details>
           <details>
             <summary>من يمكنه الاطلاع على البيانات؟</summary>
-            <p>لا تُعرض البيانات على الموقع أو للزوار أو المشاركين الآخرين. تُرسل بيانات التسجيل إلى بريد مسؤول الحملة <a href="mailto:email@gmail.com">email@gmail.com</a> ليطلع عليها المسؤولون المخولون فقط. يجب حماية حساب البريد وعدم مشاركة كلمة مروره.</p>
+            <p>لا تُعرض البيانات على الموقع أو للزوار أو المشاركين الآخرين. تُرسل بيانات التسجيل إلى بريد مسؤول الحملة <a href="mailto:email">email</a> ليطلع عليها المسؤولون المخولون فقط. يجب حماية حساب البريد وعدم مشاركة كلمة مروره.</p>
           </details>
           <details>
             <summary>هل نشارك البيانات مع جهات أخرى؟</summary>
@@ -360,7 +357,7 @@
           </details>
           <details>
             <summary>كيف أطلب حذف بياناتي؟</summary>
-            <p>يمكنك طلب الوصول إلى بياناتك أو تصحيحها أو حذفها بإرسال رسالة إلى <a href="mailto:email@gmail.com?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA">email@gmail.com</a> بعنوان «طلب حذف بيانات». سنراجع الطلب ونتعامل معه وفق الالتزامات القانونية المعمول بها.</p>
+            <p>يمكنك طلب الوصول إلى بياناتك أو تصحيحها أو حذفها بإرسال رسالة إلى <a href="mailto:email?subject=%D8%B7%D9%84%D8%A8%20%D8%AD%D8%B0%D9%81%20%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA">email</a> بعنوان «طلب حذف بيانات». سنراجع الطلب ونتعامل معه وفق الالتزامات القانونية المعمول بها.</p>
           </details>
           <div class="privacy-warning"><span aria-hidden="true">!</span><p><strong>تنبيه مهم:</strong> البريد الإلكتروني العادي ليس قناة مناسبة لإرسال معلومات صحية أو تفاصيل علاجية أو أي بيانات شديدة الحساسية. لا ترسل هذه المعلومات عبر الاستمارة أو البريد الإلكتروني.</p></div>
           <p class="policy-meta">آخر تحديث: نوفمبر 2026</p>
