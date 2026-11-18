@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="أشعة الشمس تتسلل بين أشجار الغابة">
+<defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#8fae9b"/><stop offset=".5" stop-color="#d9d5a9"/><stop offset="1" stop-color="#476d4e"/></linearGradient><radialGradient id="light"><stop stop-color="#fff6cc" stop-opacity=".95"/><stop offset="1" stop-color="#fff6cc" stop-opacity="0"/></radialGradient></defs>
+<rect width="1600" height="1000" fill="url(#bg)"/><ellipse cx="800" cy="360" rx="380" ry="340" fill="url(#light)"/>
+<path d="M720 300L520 1000H650L800 350 970 1000H1100L870 300Z" fill="#f9edbd" opacity=".22"/>
+<g fill="#1e4635"><path d="M120 80L0 360h70L0 590h250L170 360h70z"/><path d="M360 0L230 310h78L210 555h280L390 310h78z"/><path d="M1510 20l-140 320h80l-95 270h300l-100-270h75z"/><path d="M1260 120l-115 270h65l-80 220h230l-80-220h65z"/></g>
+<g fill="#315f43"><path d="M190 500L80 770h65L70 980h240l-80-210h65z"/><path d="M1400 470l-120 290h70l-85 230h270l-90-230h70z"/></g>
+<path d="M0 850Q340 740 650 840T1200 830T1600 780V1000H0Z" fill="#173a2c"/>
+<g stroke="#f6e9b8" stroke-width="5" opacity=".35"><path d="M500 450l-180 460M720 430l-90 510M960 430l210 470"/></g>
+</svg>

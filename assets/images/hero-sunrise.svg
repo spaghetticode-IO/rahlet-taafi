@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="شروق الشمس فوق تلال خضراء هادئة">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#385e56"/><stop offset=".48" stop-color="#9aab89"/><stop offset=".78" stop-color="#edc58b"/><stop offset="1" stop-color="#f2d9a9"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#fff6ce" stop-opacity=".95"/><stop offset=".35" stop-color="#f6d18a" stop-opacity=".5"/><stop offset="1" stop-color="#f6d18a" stop-opacity="0"/></radialGradient>
+ <linearGradient id="hill1" x2="0" y2="1"><stop stop-color="#66866d"/><stop offset="1" stop-color="#315a48"/></linearGradient>
+ <linearGradient id="hill2" x2="0" y2="1"><stop stop-color="#4d755b"/><stop offset="1" stop-color="#203f35"/></linearGradient>
+ <linearGradient id="ground" x2="0" y2="1"><stop stop-color="#345b43"/><stop offset="1" stop-color="#142f27"/></linearGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="38"/></filter>
+</defs>
+<rect width="1600" height="1000" fill="url(#sky)"/>
+<ellipse cx="1110" cy="390" rx="450" ry="360" fill="url(#glow)" filter="url(#blur)"/>
+<circle cx="1110" cy="420" r="112" fill="#ffe7ae" opacity=".93"/>
+<path d="M0 535 Q210 420 390 500 T760 480 T1120 510 T1600 430 V1000 H0Z" fill="#82967d" opacity=".45"/>
+<path d="M0 625 Q200 490 420 575 T830 565 T1210 590 T1600 505 V1000 H0Z" fill="url(#hill1)"/>
+<path d="M0 705 Q230 590 470 650 T900 625 T1280 675 T1600 605 V1000 H0Z" fill="url(#hill2)"/>
+<path d="M0 775 Q250 685 480 750 T920 725 T1280 760 T1600 700 V1000 H0Z" fill="url(#ground)"/>
+<path d="M810 1000 Q890 875 1000 815 Q1095 755 1110 715 Q1140 680 1215 652 Q1120 725 1160 772 Q1190 835 1325 1000Z" fill="#c6a875" opacity=".7"/>
+<path d="M830 1000 Q900 890 1015 825 Q1120 760 1140 710" fill="none" stroke="#f3d8a8" stroke-width="7" opacity=".35"/>
+<g fill="#1c4032" opacity=".92">
+ <path d="M110 690l-58 120h35l-51 100h130l-50-100h34z"/><path d="M260 655l-44 95h28l-40 78h112l-42-78h28z"/>
+ <path d="M1410 650l-66 135h40l-55 105h160l-58-105h42z"/><path d="M1530 685l-42 92h26l-35 70h100l-36-70h26z"/>
+</g>
+<g fill="#d9dfbd" opacity=".24"><ellipse cx="350" cy="700" rx="190" ry="20"/><ellipse cx="1260" cy="735" rx="250" ry="24"/></g>
+<rect width="1600" height="1000" fill="#102d24" opacity=".12"/>
+</svg>
