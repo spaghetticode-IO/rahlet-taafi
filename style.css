@@ -54,7 +54,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .hero { position: relative; min-height: 680px; display: flex; align-items: center; overflow: hidden; color: white; background: #2e4d3c; }
 .hero-photo, .hero-shade { position: absolute; inset: 0; }
 .hero-photo {
-  background-image: url("./assets/images/main.jpg");
+  background-image: url("./assets/images/main.png");
   background-position: center 52%;
   background-size: cover;
   transform: scale(1.015);
