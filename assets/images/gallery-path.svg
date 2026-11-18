@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="طريق هادئ يمتد بين تلال خضراء نحو ضوء الصباح">
-<defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#90aaa2"/><stop offset=".7" stop-color="#f1d4a4"/></linearGradient><linearGradient id="road" x2="0" y2="1"><stop stop-color="#c3b28e"/><stop offset="1" stop-color="#6c755d"/></linearGradient></defs>
-<rect width="1600" height="1000" fill="url(#sky)"/><circle cx="800" cy="320" r="110" fill="#fff0c1" opacity=".9"/>
-<path d="M0 570L250 390 430 550 700 330 920 560 1150 400 1400 560 1600 430V1000H0Z" fill="#668675"/><path d="M0 650Q250 550 500 650T1000 635T1600 610V1000H0Z" fill="#315e47"/>
-<path d="M540 1000Q650 850 735 760Q780 690 800 610Q830 550 860 500Q875 610 910 700Q970 850 1110 1000Z" fill="url(#road)"/>
-<path d="M800 1000Q825 820 825 720Q820 625 850 530" stroke="#e6d5a5" stroke-width="9" fill="none" stroke-dasharray="34 28" opacity=".7"/>
-<g fill="#1d4635"><path d="M120 650l-70 140h42l-55 100h170l-60-100h42z"/><path d="M1450 630l-70 140h42l-55 100h170l-60-100h42z"/><path d="M300 650l-45 95h27l-36 72h110l-38-72h27z"/></g>
-</svg>

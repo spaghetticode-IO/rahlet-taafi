@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="مرج أخضر في ضوء الصباح">
-<defs><linearGradient id="s" x2="0" y2="1"><stop stop-color="#9eb9b0"/><stop offset=".55" stop-color="#f5d6a4"/><stop offset="1" stop-color="#f2e4bf"/></linearGradient><linearGradient id="m" x2="0" y2="1"><stop stop-color="#789b79"/><stop offset="1" stop-color="#315a45"/></linearGradient><radialGradient id="sun"><stop stop-color="#fff4c9"/><stop offset="1" stop-color="#ffe5a8" stop-opacity="0"/></radialGradient></defs>
-<rect width="1600" height="1000" fill="url(#s)"/><circle cx="1150" cy="330" r="260" fill="url(#sun)"/><circle cx="1150" cy="330" r="75" fill="#fff0bd"/>
-<path d="M0 580 Q240 480 460 560T900 520T1300 550T1600 500V1000H0Z" fill="#a7b99a"/><path d="M0 670 Q300 550 560 660T1040 615T1600 620V1000H0Z" fill="url(#m)"/><path d="M0 780 Q300 680 600 755T1100 720T1600 740V1000H0Z" fill="#214b38"/>
-<path d="M600 1000 Q760 850 900 805 Q1060 760 1120 700 Q1200 650 1310 630 Q1200 710 1240 770 Q1300 850 1430 1000Z" fill="#d6bd8e" opacity=".8"/>
-<g stroke="#e4d5a8" stroke-width="5" opacity=".55"><path d="M160 860l-25-150m25 150 30-95M350 900l-15-160m15 160 42-105M1460 865l-10-155m10 155 35-95"/></g>
-</svg>
